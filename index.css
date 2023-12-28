@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: rgb(181, 176, 113);
+  font-family: monospace;
+  justify-items: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: #ff90e8;
+}
+
+#recordedVideo {
+  margin-top: 20px;
+  border: 2px solid #ff90e8;
+  outline: none;
+  border-radius: 10% 0% 10% 0%;
+}
+
+/* button  */
+.button {
+  margin: 2rem;
+  padding: 20px;
+  --bg: #645c5c;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
