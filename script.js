@@ -4,6 +4,14 @@ let recordedChunks = [];
 const startRecording = async () => {
   try {
     const stream = await navigator.mediaDevices.getDisplayMedia();
+    const MobileWidth = 600;
+    const screenWidth =
+      window.innerWidth ||
+      document.body.clientWidth ||
+      document.documentElement.clientWidth;
+    if (!stream && MobileWidth > screenWidth) {
+      alert("Not Compatible with Device, Try This on desktop ");
+    }
     mediaRecorder = new MediaRecorder(stream);
 
     mediaRecorder.ondataavailable = (event) => {

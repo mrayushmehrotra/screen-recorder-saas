@@ -5,7 +5,19 @@ body {
   color: rgb(181, 176, 113);
   font-family: monospace;
   justify-items: center;
+
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: none;
+    background-color: black;
+    filter: blur(10px);
+    background-image: url(https://cdn.iconscout.com/icon/premium/png-256-thumb/online-education-3567645-2982607.png);
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 h1 {
